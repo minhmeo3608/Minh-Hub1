@@ -10,7 +10,7 @@ Time = 10
 print("RobloXploits")
 OrionLib:MakeNotification({
 Name = "Notification",
-Content = "Cảm ơn vì dùng script của tôi  ",
+Content = "Cảm ơn vì đã dùng script của tôi  ",
 Image = "rbxassetid://4483345998",
 Time = 10
 })
@@ -24,14 +24,14 @@ Time = 10
 print("RobloXploits")
 OrionLib:MakeNotification({
 Name = "Our Discord",
-Content = "https://discord.gg/7eT6S3s4Ed",
+Content = "",
 Image = "rbxassetid://4483345998",
 Time = 10
 })
 print("RobloXploits")
 OrionLib:MakeNotification({
-Name = "Our Discord",
-Content = "https://discord.gg/C6VaVKsapN",
+Name = "",
+Content = "",
 Image = "rbxassetid://4483345998",
 Time = 10
 })
@@ -58,7 +58,7 @@ local fask = task
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "MikuHubV2 | By PhatNotTaken",
+    Title = "MinhHub | By Minhscript",
     SubTitle = "",
     TabWidth = 160,
     Size = UDim2.fromOffset(600, 325),
@@ -125,11 +125,11 @@ repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstCh
 wait(0.5)
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 if game.PlaceId == 2753915549 then
-        Miku1 = true
+        Minh1 = true
     elseif game.PlaceId == 4442272183 then
-        Miku2 = true
+        Minh2 = true
     elseif game.PlaceId == 7449423635 then
-        Miku3 = true
+        Minh3 = true
     else
     game:GetService("Players").LocalPlayer:Kick(" Con Đĩ Mẹ Mày")
   end
@@ -139,7 +139,7 @@ if game.PlaceId == 2753915549 then
         
 	function CheckQuest() 
         MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
-        if Miku1 then
+        if Minh1 then
             if MyLevel == 1 or MyLevel <= 9 then
                 Mon = "Bandit"
                 LevelQuest = 1
@@ -347,7 +347,7 @@ if game.PlaceId == 2753915549 then
                 CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
                 CFrameMon = CFrame.new(5441.95166015625, 42.50205993652344, 4950.09375)
             end
-        elseif Miku2 then
+        elseif Minh2 then
             if MyLevel == 700 or MyLevel <= 724 then
                 Mon = "Raider"
                 LevelQuest = 1
@@ -518,7 +518,7 @@ if game.PlaceId == 2753915549 then
                 CFrameQuest = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
                 CFrameMon = CFrame.new(-3352.9013671875, 285.01556396484375, -10534.841796875)
             end
-        elseif Miku3 then
+        elseif Minh3 then
             if MyLevel == 1500 or MyLevel <= 1524 then
                 Mon = "Pirate Millionaire"
                 LevelQuest = 1
@@ -915,7 +915,7 @@ end
         _G.Clip = false
     end
 
-function Miku(Pos)
+function Minh(Pos)
         Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
         if game.Players.LocalPlayer.Character.Humanoid.Sit == true then game.Players.LocalPlayer.Character.Humanoid.Sit = false end
         pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/315, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
@@ -943,7 +943,7 @@ function Miku(Pos)
         elseif y == 7449423635 then
             ThreeWorld = true
         end
-        if Miku3 then
+        if Minh3 then
             TableLocations = {
                 ["Caslte On The Sea"] = Vector3.new(-5058.77490234375, 314.5155029296875, -3155.88330078125),
                 ["Hydra"] = Vector3.new(5756.83740234375, 610.4240112304688, -253.9253692626953),
@@ -952,14 +952,14 @@ function Miku(Pos)
                 ["Ngu1"] = Vector3.new(-11993.580078125, 334.7812805175781, -8844.1826171875),
                 ["ngu2"] = Vector3.new(5314.58203125, 25.419387817382812, -125.94227600097656)
             }
-        elseif Miku2 then
+        elseif Minh2 then
             TableLocations = {
                 ["Mansion"] = Vector3.new(-288.46246337890625, 306.130615234375, 597.9988403320312),
                 ["Flamingo"] = Vector3.new(2284.912109375, 15.152046203613281, 905.48291015625),
                 ["122"] = Vector3.new(923.21252441406, 126.9760055542, 32852.83203125),
                 ["3032"] = Vector3.new(-6508.5581054688, 89.034996032715, -132.83953857422)
             }
-        elseif Miku1 then
+        elseif Minh1 then
             TableLocations = {
                 ["1"] = Vector3.new(-7894.6201171875, 5545.49169921875, -380.2467346191406),
                 ["2"] = Vector3.new(-4607.82275390625, 872.5422973632812, -1667.556884765625),
@@ -1284,7 +1284,7 @@ require(game.ReplicatedStorage.Notification).new("<Color=Blue>" ..PlayerName.. "
 --//Code
 setfpscap(60)
 --//macdinh
-local Miku = CFrame.new(-9506.234375, 172.130615234375, 6117.0771484375)
+local Minh = CFrame.new(-9506.234375, 172.130615234375, 6117.0771484375)
 local CakePos = CFrame.new(-1978.45715, 251.535294, -12395.2979)
 local JackBoCon = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.898681640625)
 local BuCacCho = CFrame.new(-5344.822265625, 423.98541259766, -2725.0930175781)
@@ -1307,7 +1307,7 @@ PosY = 45
 AutoHaki()
 
 spawn(function()
-	function MikuHub()
+	function MinhHub()
 		game:GetService("VirtualUser"):CaptureController()
 		game:GetService("VirtualUser"):Button1Down(Vector2.new(1280, 672))
 	end
@@ -1347,7 +1347,7 @@ end
 
 ---------------SettingTab
 Tabs.infor:AddButton({
-        Title = "Discord | Miku Hub(NotTakenTeam)",
+        Title = "Discord | Minh Hub(NotTakenTeam)",
         Description = "Copy Link Discord",
         Callback = function()
         setclipboard("https://discord.gg/vNgZmtRwdR")
@@ -1630,16 +1630,16 @@ LPH_JIT_MAX(function()
 	end)
 end)()
 
-local SelectFastAttackMode = (SelectFastAttackMode or "Miku Fast")
+local SelectFastAttackMode = (SelectFastAttackMode or "Minh Fast")
 
-SelectedFastAttackMode = {"Normal Attack","Fast Attack","Miku Fast"}
+SelectedFastAttackMode = {"Normal Attack","Fast Attack","Minh Fast"}
 
 local function ChangeModeFastAttack(SelectFastAttackMode)
 	if SelectFastAttackMode == "Normal Attack" then
 		FireCooldown = 0.1
 	elseif SelectFastAttackMode == "Fast Attack" then
 		FireCooldown = 0.07
-	elseif SelectFastAttackMode == "Miku Fast" then
+	elseif SelectFastAttackMode == "Minh Fast" then
 		FireCooldown = 0.02
 	end
 end
@@ -2164,7 +2164,7 @@ local QuestTitle = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.C
     spawn(
             function()
             while wait() do
-                if FarmMode == "Farm Bone" and _G.AutoFarm and Miku3 then
+                if FarmMode == "Farm Bone" and _G.AutoFarm and Minh3 then
                     pcall(  
                             function()                        
                     if game:GetService("Workspace").Enemies:FindFirstChild("Reborn Skeleton") or game:GetService("Workspace").Enemies:FindFirstChild("Living Zombie") or game:GetService("Workspace").Enemies:FindFirstChild("Demonic Soul") or game:GetService("Workspace").Enemies:FindFirstChild("Posessed Mummy") then
@@ -2188,13 +2188,13 @@ local QuestTitle = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.C
                         end
                     else
                     if BypassTP then
-                    if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Miku.Position).Magnitude > 1500 then
-			        BTP(Miku)
-				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Miku.Position).Magnitude < 1500 then
-				    topos(Miku)
+                    if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Minh.Position).Magnitude > 1500 then
+			        BTP(Minh)
+				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Minh.Position).Magnitude < 1500 then
+				    topos(Minh)
 					end
 				else
-				    topos(Miku)
+				    topos(Minh)
 				end
 				        UnEquipWeapon(_G.SelectWeapon)
                         BonesBring = false					   
@@ -2220,7 +2220,7 @@ local QuestTitle = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.C
 
 spawn(function()
        while wait() do
-         if FarmMode == "Farm Katakuri" and _G.AutoFarm and Miku3 then
+         if FarmMode == "Farm Katakuri" and _G.AutoFarm and Minh3 then
          pcall(function()                        
       if game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -2377,7 +2377,7 @@ end)
 
 local ConCac = Tabs.Main:AddSection("Farm Mics")
 
-if Miku3 then
+if Minh3 then
 local Dropdown = Tabs.Main:AddDropdown("DropdownFarm", {
     Title = "Select Item Farm ( Sea 3 )",
     Values = {"Cacao", "Dragon Scale", "Leather"},
@@ -2390,7 +2390,7 @@ _G.SelectFarm = item
 end)
 end
 
-if Miku2 then
+if Minh2 then
 local Dropdown = Tabs.Main:AddDropdown("DropdownFarm", {
     Title = "Select Item Farm ( Sea2 )",
     Values = {"Mystic Droplet", "Vampire Fang"},
@@ -2413,7 +2413,7 @@ local Cacao = {
 spawn(function()
     spawn(function()
         while wait(.1) do
-            if CacaoBring and _G.BringMonster and Miku3 then
+            if CacaoBring and _G.BringMonster and Minh3 then
                 pcall(function()
                     for i, v in pairs(game.Workspace.Enemies:GetChildren()) do
                         if v.Name == "Cocoa Warrior" or v.Name == "Chocolate Bar Battler" or v.Name == "Sweet Thief" or v.Name == "Candy Rebel" then
@@ -2441,7 +2441,7 @@ end)
 spawn(function()	
 task.spawn(function() 
 		while wait() do
-			if VayRong and _G.BringMonster and Miku3 then 
+			if VayRong and _G.BringMonster and Minh3 then 
 				pcall(function() 
 					for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
 						if v.Name == "Dragon Crew Archer" then 
@@ -2466,7 +2466,7 @@ end)
 spawn(function()
 task.spawn(function() 
 		while wait() do
-			if ConCac and _G.BringMonster and Miku3 then 
+			if ConCac and _G.BringMonster and Minh3 then 
 				pcall(function() 
 					for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
 						if v.Name == "Forest Pirate" then 
@@ -2493,7 +2493,7 @@ end
 spawn(function()
 task.spawn(function() 
 		while wait() do
-			if Ditme and _G.BringMonster and Miku2 then 
+			if Ditme and _G.BringMonster and Minh2 then 
 				pcall(function() 
 					for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
 						if v.Name == "Vampire" then 
@@ -2520,7 +2520,7 @@ end
 spawn(
         function()
     while wait() do
-        if _G.SelectFarm == "Cacao" and StartFarm and Miku3 then
+        if _G.SelectFarm == "Cacao" and StartFarm and Minh3 then
             pcall(  
                     function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Cocoa Warrior") or game:GetService("Workspace").Enemies:FindFirstChild("Chocolate Bar Battler") or game:GetService("Workspace").Enemies:FindFirstChild("Sweet Thief") or game:GetService("Workspace").Enemies:FindFirstChild("Candy Rebel") then
@@ -2562,7 +2562,7 @@ end
 )
 spawn(function()
     while wait() do
-        if _G.SelectFarm == "Dragon Scale" and StartFarm and Miku3 then
+        if _G.SelectFarm == "Dragon Scale" and StartFarm and Minh3 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Dragon Crew Archer") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -2597,7 +2597,7 @@ end
 )
 spawn(function()
     while wait() do
-        if _G.SelectFarm == "Leather" and StartFarm and Miku3 then
+        if _G.SelectFarm == "Leather" and StartFarm and Minh3 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Forest Pirate") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -2635,7 +2635,7 @@ spawn(
         task.spawn(
                     function()
       while wait(.1) do
-			if Lon and _G.BringMonster and Miku2 then 
+			if Lon and _G.BringMonster and Minh2 then 
 				pcall(function() 
 					for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
 						if v.Name == "Water Fighter" then 
@@ -2661,7 +2661,7 @@ end
 spawn(
         function()
                 while task.wait() do
-      if _G.SelectFarm == "Mystic Droplet" and StartFarm and Miku2 then               
+      if _G.SelectFarm == "Mystic Droplet" and StartFarm and Minh2 then               
                     pcall(      
                          function()
                    if game:GetService("Workspace").Enemies:FindFirstChild("Water Fighter") then
@@ -2698,7 +2698,7 @@ end
 spawn(
         function()
                 while task.wait() do
-      if _G.SelectFarm == "Vampire Fang" and StartFarm and Miku2 then               
+      if _G.SelectFarm == "Vampire Fang" and StartFarm and Minh2 then               
                     pcall(      
                          function()
                    if game:GetService("Workspace").Enemies:FindFirstChild("Vampire") then
@@ -2862,7 +2862,7 @@ end)
     
      spawn(function()
         while wait() do
-            if  _G.Khi_Dot_Len_Dien and Miku1 then
+            if  _G.Khi_Dot_Len_Dien and Minh1 then
                 pcall(function()
                     if game:GetService("Workspace").Enemies:FindFirstChild("Thunder God") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -2909,7 +2909,7 @@ end)
 spawn(function()
     while wait() do
         pcall(function()
-            if _G.Auto_Nha_Dien and Miku2 then
+            if _G.Auto_Nha_Dien and Minh2 then
                 if game:GetService("Workspace").Enemies:FindFirstChild("Core") then
                     for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                         if v.Name == "Core" and v.Humanoid.Health > 0 then
@@ -2936,7 +2936,7 @@ local Ren = {
 spawn(function()
     spawn(function()
         while wait(.1) do
-            if RenGuKu and _G.BringMonster and Miku2 then
+            if RenGuKu and _G.BringMonster and Minh2 then
                 pcall(function()
                     for i, v in pairs(game.Workspace.Enemies:GetChildren()) do
                         if v.Name == "Snow Lurker" or v.Name == "Arctic Warrior" then
@@ -2970,7 +2970,7 @@ end)
 spawn(function()
         pcall(function()
             while wait() do
-                if _G.Kiem_Lua and Miku2 then
+                if _G.Kiem_Lua and Minh2 then
                     if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Hidden Key") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Hidden Key") then
                         EquipWeapon("Hidden Key")
                         topos(CFrame.new(6571.1201171875, 299.23028564453, -6967.841796875))
@@ -3005,7 +3005,7 @@ end)
 
     spawn(function()
         while wait() do
-            if Auto_Ki_Di and Miku2 then
+            if Auto_Ki_Di and Minh2 then
                 pcall(function()
                     if game:GetService("Workspace").Enemies:FindFirstChild("Ship Deckhand") or game:GetService("Workspace").Enemies:FindFirstChild("Ship Engineer") or game:GetService("Workspace").Enemies:FindFirstChild("Ship Steward") or game:GetService("Workspace").Enemies:FindFirstChild("Ship Officer") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3036,12 +3036,12 @@ end)
 
 local Toggle = Tabs.item:AddToggle("Auto Ectoplasm", { Title = "Buy Sword Legendary", Default = false })
 Toggle:OnChanged(function(KiemNhuLon)
-    NgayXuaNgayXuaCoNguoiTenLaAnDepTraiDaTaiDepTraNoiTiengTiktokNoiYoutubeCungNoiHayKiemMotNguoiDangCapHonMikuDiNheCacBanHuhuHu = KiemNhuLon
+    NgayXuaNgayXuaCoNguoiTenLaAnDepTraiDaTaiDepTraNoiTiengTiktokNoiYoutubeCungNoiHayKiemMotNguoiDangCapHonMinhDiNheCacBanHuhuHu = KiemNhuLon
 end)      
 
 spawn(function()
     while wait() do
-        if NgayXuaNgayXuaCoNguoiTenLaAnDepTraiDaTaiDepTraNoiTiengTiktokNoiYoutubeCungNoiHayKiemMotNguoiDangCapHonMikuDiNheCacBanHuhuHu then
+        if NgayXuaNgayXuaCoNguoiTenLaAnDepTraiDaTaiDepTraNoiTiengTiktokNoiYoutubeCungNoiHayKiemMotNguoiDangCapHonMinhDiNheCacBanHuhuHu then
             pcall(function()
                 local args = {
                     [1] = "LegendarySwordDealer",
@@ -3072,7 +3072,7 @@ end)
 spawn(function()
     while wait(.5) do
         pcall(function()
-            if _G.Gan_Duoc_Cho_Khi and Miku3 then
+            if _G.Gan_Duoc_Cho_Khi and Minh3 then
                 if game.Players.LocalPlayer.Backpack:FindFirstChild("Holy Torch") or game.Players.LocalPlayer.Character:FindFirstChild("Holy Torch") then
                     repeat wait(.2)
                         EquipWeapon("Holy Torch")
@@ -3123,7 +3123,7 @@ end)
 spawn(function()
     while wait(.2) do
         pcall(function()
-            if Gan_Haki_Lon and Miku3 then              
+            if Gan_Haki_Lon and Minh3 then              
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5072.08984375, 314.5412902832, -3151.1098632812))
                 wait(0.4)
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("activateColor","Winter Sky")
@@ -3159,7 +3159,7 @@ end)
     spawn(function()
         pcall(function()
             while wait() do
-                if _G.ThangDauMatLon and Miku3 then
+                if _G.ThangDauMatLon and Minh3 then
                     if game:GetService("Workspace").Enemies:FindFirstChild("rip_indra True Form") or game:GetService("Workspace").Enemies:FindFirstChild("rip_indra") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                             if v.Name == ("rip_indra True Form" or v.Name == "rip_indra") and v.Humanoid.Health > 0 and v:IsA("Model") and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
@@ -3198,7 +3198,7 @@ end)
 
     spawn(function()
         while wait() do
-            if  _G.Long_Ma_Bac_Giang and Miku3 then
+            if  _G.Long_Ma_Bac_Giang and Minh3 then
                 pcall(function()
                     if game:GetService("Workspace").Enemies:FindFirstChild("Longma") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3629,7 +3629,7 @@ Tabs.tele:AddButton({
     
 local Mastery = Tabs.tele:AddSection("Teleport Island")
 
-if Miku1 then
+if Minh1 then
 local Dropdown1 = Tabs.tele:AddDropdown("DropdownFarm", {
     Title = "Select Island",
     Values = {"WindMill", "Marine","Middle Town", "Jungle", "Pirates Village", "Desert", "Snow Island", "MarineFord", "Colosseum", "Sky Island 1", "Sky Island 2", "Sky Island 3", "Prison", "Magma Village", "Under Water Island","Fountain City", "Shank Room"},
@@ -3642,7 +3642,7 @@ _G.SelectIsland = Value
 end)
 end
 
-if Miku2 then
+if Minh2 then
 local Dropdown2 = Tabs.tele:AddDropdown("DropdownFarm", {
     Title = "Select Island",
     Values = {"The Cafe", "Frist Spot", "Dark Area", "Flamingo Mansion", "Flamingo Room", "Green Zone", "Factory", "Colossuim", "Zombie Island", "Two Snow Mountain", "Punk Hazard", "Cursed Ship", "Ice Castle", "Forgotten Island", "Ussop Island"},
@@ -3655,7 +3655,7 @@ _G.SelectIsland = Value
 end)
 end
 
-if Miku3 then
+if Minh3 then
 local Dropdown3 = Tabs.tele:AddDropdown("DropdownFarm3", {
     Title = "Select Island",
     Values = {"Mansion","Port Town","Great Tree","Castle On The Sea","Hydra Island","Haunted Castle","Ice Cream Island","Peanut Island","Cake Island","Cocoa Island","Candy Island","Tiki Outpost"},
@@ -3823,8 +3823,8 @@ spawn(function()
 end)                          
 
 local Toggle = Tabs.an:AddToggle("RemoveConMe", { Title = "Remove Damege", Description = "Delete Damege", Default = true })
-Toggle:OnChanged(function(MikuHubOnTop)
-   removedame = MikuHubOnTop
+Toggle:OnChanged(function(MinhHubOnTop)
+   removedame = MinhHubOnTop
 end)
 
 spawn(function()
@@ -3838,8 +3838,8 @@ spawn(function()
  end)
 
 local Toggle = Tabs.an:AddToggle("RemoveConMe", { Title = "Remove Notify", Description = "Delete Notify When Farm", Default = false })
-Toggle:OnChanged(function(MikuHubOnTop)
-   removenotify = MikuHubOnTop
+Toggle:OnChanged(function(MinhHubOnTop)
+   removenotify = MinhHubOnTop
 end)
 
 spawn(function()
@@ -4044,7 +4044,7 @@ spawn(function()
 end)
 spawn(function()
     while wait() do 
-        if _G.Quest_Nhu_Cai_Lon and Miku3 then
+        if _G.Quest_Nhu_Cai_Lon and Minh3 then
             pcall(function()
   if game:GetService("Workspace").Enemies:FindFirstChild("Reborn Skeleton") or game:GetService("Workspace").Enemies:FindFirstChild("Living Zombie") or game:GetService("Workspace").Enemies:FindFirstChild("Demonic Soul") or game:GetService("Workspace").Enemies:FindFirstChild("Posessed Mummy") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -4066,12 +4066,12 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BonePos.Position).Magnitude > 1500 then
-			        BTP(Miku)
+			        BTP(Minh)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BonePos.Position).Magnitude < 1500 then
-				    topos(Miku)
+				    topos(Minh)
 					end
 				else
-				    topos(Miku)
+				    topos(Minh)
 				end
 				        UnEquipWeapon(_G.SelectWeapon)
                         BonesBring = false
@@ -4330,7 +4330,7 @@ end)
 spawn(
     function()
     while task.wait() do
-        if _G.Kill_V4 and Miku3 then
+        if _G.Kill_V4 and Minh3 then
             pcall(
                 function()
     if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == true then
@@ -4386,8 +4386,8 @@ Toggle:OnChanged(function(Lonma)
 end)
 
 local Toggle = Tabs.Race:AddToggle("Kill Trial", { Title = "Skill C", Default = false })
-Toggle:OnChanged(function(Miku)
-    ConCacC = Miku
+Toggle:OnChanged(function(Minh)
+    ConCacC = Minh
 end)
 
 --Deo Muon Lam Aim Nhung Bang Cach Than Ki Nao Do Fast Attack Deo Pha Noi Ken 🤣
@@ -4506,9 +4506,9 @@ spawn(function()
             if _G.Auto_StartRaid then
                 if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == false then
                     if not game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") and game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Special Microchip") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Special Microchip") then
-                        if Miku2 then
+                        if Minh2 then
                             fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
-                        elseif Miku3 then
+                        elseif Minh3 then
                             fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
                         end
                     end
@@ -4518,7 +4518,7 @@ spawn(function()
     end
 end)
  
-if Miku2 then
+if Minh2 then
 Tabs.Raid:AddButton({
     Title = "Teleport To Raid",
     Description = "Bay Đến Chỗ Raid",
@@ -4528,7 +4528,7 @@ Tabs.Raid:AddButton({
 })       
 end    
 
-if Miku3 then
+if Minh3 then
 Tabs.Raid:AddButton({
     Title = "Teleport To Raid",
     Description = "Bay Đến Chỗ Raid",
@@ -4569,7 +4569,7 @@ end)
 
 spawn(function()
         while wait() do
-            if _G.Raidlaw and Miku2 then
+            if _G.Raidlaw and Minh2 then
                 pcall(function()
                     if game:GetService("Workspace").Enemies:FindFirstChild("Order") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -4832,7 +4832,7 @@ end)
 
 game.StarterGui:SetCore("SendNotification", {
       Icon = "";
-      Title = "Miku Hub", 
+      Title = "Minh Hub", 
       Text = "Complete !";
 })                                                                                              
 wait(.3)
@@ -4897,7 +4897,7 @@ local Data =
                 },
                 {
                     ["name"] = "Ty For Use:",
-                    ["value"] = "**__Miku Hub__**",
+                    ["value"] = "**__Minh Hub__**",
                     ["inline"] = true          
                 }
             }              
